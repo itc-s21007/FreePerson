@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import MovieInfo from "./MovieInfo";
 
 function App() {
   return (
-    <body>
-    <h1>APIの取得</h1>
-    
-    </body>
+      <div className="App">
+        <h1>映画のおすすめ</h1>
+        <MovieInfo />
+      </div>
   );
 }
 
