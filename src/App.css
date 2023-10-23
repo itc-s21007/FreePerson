@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left {
+  flex: 80%;
+}
+
+.right {
+  flex: 20%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-left {
+  flex: 80%;
+}
+
+.image {
+  width: 900px; /* 幅を指定（ピクセル単位） */
+  height: auto; /* 高さは自動調整（アスペクト比を保持） */
+}
+
+.bottom-left {
+  flex: 20%;
+}
+
+.top-left, .bottom-left {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.right {
+  border: 1px solid #000;
+  padding: 10px;
+}
