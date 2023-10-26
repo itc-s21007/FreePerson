@@ -57,6 +57,13 @@
 
 .top-left {
   flex: 80%;
+  position: relative;
+}
+.top-left p {
+  position: absolute;/*絶対配置*/
+  color: blue;/*文字は白に*/
+  top: 0;
+  left: 0;
 }
 
 .image {
