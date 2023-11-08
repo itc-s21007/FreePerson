@@ -1,18 +1,11 @@
 import React from "react";
 import "./App.css";
-import {PrismaClient} from "@prisma/client"
-import mozaiku from"./mosaic.png";
-import MovieInfo from "./MovieInfo";
-import AnimeInfo from "./AnimeInfo";
-import Books from "./Books";
-
 
 function App() {
-    const prisma = new PrismaClient()
-    async function main() {
-        const book = await prisma.books.findFirst(2)
-        return book
-    }
+
+
+
+
     return (
         <div className="App">
             {/*<div className="container">*/}
@@ -32,7 +25,7 @@ function App() {
             {/*    </div>*/}
             {/*</div>*/}
 
-            {prisma}
+
         </div>
     );
 }
