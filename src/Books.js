@@ -19,8 +19,8 @@ const Books = () => {
         const randomNovelKeyword = novelKeywords[Math.floor(Math.random() * novelKeywords.length)];
 
         // 漫画と小説のそれぞれのGoogle Books APIのエンドポイントURLを構築
-        const mangaApiUrl = `https://www.googleapis.com/books/v1/volumes?q=${randomMangaKeyword}&maxResults=10&key=${apiKey}`;
-        const novelApiUrl = `https://www.googleapis.com/books/v1/volumes?q=${randomNovelKeyword}&maxResults=10&key=${apiKey}`;
+        const mangaApiUrl = `https://www.googleapis.com/books/v1/volumes?q=${randomMangaKeyword}&maxResults=10&key=${apiKey}&langRestrict=ja`;
+        const novelApiUrl = `https://www.googleapis.com/books/v1/volumes?q=${randomNovelKeyword}&maxResults=10&key=${apiKey}&langRestrict=ja`;
 
         // 漫画データを取得
         fetch(mangaApiUrl)

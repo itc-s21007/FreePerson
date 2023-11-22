@@ -13,20 +13,20 @@ datasource db {
 model Books {
   id Int @id @default(autoincrement())
   title String
-  author String
-  poster Bytes
+  author String?
+  poster String?
 }
 
 model Movie {
   id Int @id @default(autoincrement())
   title String
-  author String
-  poster Bytes
+  author String?
+  poster String?
 }
 
 model Anime {
   id Int @id @default(autoincrement())
   title String
-  author String
-  poster Bytes
+  author String?
+  poster String?
 }
