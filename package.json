@@ -8,18 +8,24 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.5.1",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "nodemon": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-double-marquee": "^1.1.0",
+    "react-fast-marquee": "^1.6.2",
     "react-scripts": "5.0.1",
     "sass": "1.43.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start & nodemon src/server/api.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "seed": "node prisma/seed.js",
+    "Booksdb": "nodemon src/acquisition/Booksdb.js"
   },
   "eslintConfig": {
     "extends": [

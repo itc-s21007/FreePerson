@@ -5,31 +5,18 @@ const RandomAnime = () => {
     const [animeData, setAnimeData] = useState([]);
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const apiKey = 'FgEXO0CAaEIdThd8TdcPyIyOWHTySfR0ZU1oZcVkkwk'; // Annict Developers APIのAPIキーを追加
-                const response = await axios.get('https://api.annict.com/v1/works', {
-                    params: {
-                        access_token: apiKey,
-                    },
-                });
+        const animeUrl = `https://api.annict.com/v1/works?access_token=(${access_token})?title`
+        const access_token = 'Y5Wuo6xnk25Kq6pqvI9z4uLtx4p2zA-ZairvX1zdIFg';
 
-                // APIから取得したデータから10個のランダムなアニメを選択
-                const randomAnimeData = [];
-                const totalAnimeCount = response.data.length;
-                while (randomAnimeData.length < 10) {
-                    const randomIndex = Math.floor(Math.random() * totalAnimeCount);
-                    if (!randomAnimeData.some(anime => anime.id === response.data[randomIndex].id)) {
-                        randomAnimeData.push(response.data[randomIndex]);
-                    }
-                }
-                setAnimeData(randomAnimeData);
-            } catch (error) {
-                console.error('Error fetching data: ', error);
-            }
-        };
-
-        fetchData();
+        fetch(animeUrl)
+            .then((response) => response.json())
+            .then((data) => {
+                const animeData = data.works || []
+                setAnimeData(animeData)
+            })
+            .catch((e) => {
+                console.error('アニメデータの取得に失敗しました',e)
+            })
     }, []);
 
     return (

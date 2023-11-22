@@ -1,0 +1,8 @@
+-- AlterTable
+ALTER TABLE "Anime" ALTER COLUMN "poster" SET DATA TYPE TEXT;
+
+-- AlterTable
+ALTER TABLE "Books" ALTER COLUMN "poster" SET DATA TYPE TEXT;
+
+-- AlterTable
+ALTER TABLE "Movie" ALTER COLUMN "poster" SET DATA TYPE TEXT;
