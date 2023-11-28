@@ -21,7 +21,7 @@ function App() {
                         <h1 className="lettercolor">暇人 ”暇を楽しみに変える”</h1>
                         <button className="button" onClick="buttonClick(1)">映画</button>
                         <button className="button" onClick="buttonClick(2)">書籍</button>
-                        <button className="button" onClick="buttonClick(3)">アニメ</button>
+                        <button className="button" onClick="buttonClick(3)">アニメ</button
                     </div>
                 </div>
                 <div class="right">
