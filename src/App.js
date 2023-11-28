@@ -13,12 +13,15 @@ function App() {
             <div className="container">
                 <div className="left">
                     <div className="top-left">
-                        <Model/>
+                        <div className="center">
+                            <Model/>
+                        </div>
                     </div>
-                    <div className="bottom-left">
-                        <button onClick="buttonClick(1)">映画</button>
-                        <button onClick="buttonClick(2)">書籍</button>
-                        <button onClick="buttonClick(3)">アニメ</button>
+                    <div className="button-left">
+                        <h1 className="lettercolor">暇人 ”暇を楽しみに変える”</h1>
+                        <button className="button" onClick="buttonClick(1)">映画</button>
+                        <button className="button" onClick="buttonClick(2)">書籍</button>
+                        <button className="button" onClick="buttonClick(3)">アニメ</button
                     </div>
                 </div>
                 <div class="right">
