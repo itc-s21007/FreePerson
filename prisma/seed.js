@@ -39,7 +39,7 @@ const novelApiUrl = `https://www.googleapis.com/books/v1/volumes?q=${randomNovel
 //     .catch((error) => {
 //         console.error('漫画データの取得に失敗しました', error);
 //     });
-
+//
 // fetch(novelApiUrl)
 //     .then((response) => response.json())
 //     .then(async (data) => {
@@ -65,7 +65,7 @@ const novelApiUrl = `https://www.googleapis.com/books/v1/volumes?q=${randomNovel
 
 const ApiKey = "9360a261519daf0723b034e5a698e17b"
 const randomPage = Math.floor(Math.random() * 500) + 1; // ページをランダムに選択
-const movieUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${ApiKey}&page=4&language=ja-JP`
+const movieUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${ApiKey}&page=20&language=ja-JP`
 
 fetch(movieUrl)
     .then((response) => response.json())
