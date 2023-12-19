@@ -170,12 +170,12 @@ div.rfm-child {
 }
 
 .right {
-  padding: 10px;
+
 }
 .advertisement {
   margin: 10px;
-  width: 20%;
-  height: 25%;
+  width: 30%;
+  height: 30%;
   
 }
 
@@ -300,6 +300,20 @@ div.rfm-child {
 .marquee-content {
   display: inline-block;
   animation: marqueeRL 20s linear infinite; /* Adjust duration as needed */
+}
+
+.asa:hover{
+  box-shadow: 10px 10px 10px white;
+  transform: translateY(-4px);
+  transition-duration: 0.5s;
+}
+
+.asa{
+  transition-duration: 0.5s;
+}
+
+.asa{
+  width: 90%;
 }
 
 
