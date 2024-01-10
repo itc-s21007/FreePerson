@@ -1,12 +1,13 @@
 # 暇人アプリの取り扱い説明書  
 
 このアプリはブラザーで動き、書籍、映画などをおすすめしてくれるアプリです。
+ソースコード(<https://github.com/itc-s21007/FreePerson>)
 
 ## 環境構築
 
 ・開発ツール（webstorm)  
 ・言語（javascript, html, css, node.js)  
-・その他（docker, postgresql)
+・その他（docker, postgresql, aws)
 
 ## アプリの概要
 
